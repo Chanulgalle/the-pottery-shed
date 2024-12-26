@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pottery Shed</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="sidebar">
+        <div class="logo">
+            <img src="images/Logo.jpg" alt="The Pottery Shed Logo">
+        </div>
+        <!-- Burger Menu -->
+        <button class="burger-menu" id="burger-menu" aria-label="Toggle Navigation">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home-section">Home</a></li>
+            <li><a href="#about-section">About the shed</a></li>
+            <li><a href="#location-section">Book a class</a></li>
+            <li><a href="#gift-certificates-section">Gift Certificates</a></li>
+            <li><a href="#contact-section">Contact us</a></li>
+        </ul>
+    </nav>
+    <!-- Homepage Content Section -->
+    <section id="home-section" class="homepage-full">
+        <div class="homepage-text">
+            <h2>Explore the World of Pottery</h2>
+            <p>
+                Learn to master the art of clay and create beautiful, unique masterpieces. Unleash your inner artist and experience tranquility and mindfulness with every turn.
+            </p>
+        </div>
+    </section>
+    <!-- About the Pottery Shed Section -->
+    <section id="about-section" class="about-section">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="images/pottery-about.jpg" alt="Pottery About Image">
+            </div>
+            <div class="about-content">
+                <h2>About the Pottery Shed</h2>
+                <p>
+                    American pottery instructor Joe Darling came up with the idea for The Pottery Shed in 2010. 
+                    To maximize achievement, the studio and classes are exquisitely set up. 
+                    Please stop over and have a look at it for yourself; it's always open.<br><br>
+                    We offer training levels to accommodate both absolute beginners and intermediates. For the brightest colors and the least energy impact, we fire to cone 03 instead. 
+                    Midfire temperatures are another type of firing service.<br><br>
+                    We provide a great three-class course for beginners as well as a special priced six-pack that includes three classes and three practice sessions. 
+                    Each lesson lasts two hours and is structured similarly, with an introduction, a demonstration, and then a hands-on, step-by-step clay-making session.
+                    The lesson's goal and guiding principles will be explained by the instructors. 
+                    <span id="extra-content" class="hidden">
+                    Make use of as much clay as necessary to comprehend the assignment. With a little focus and good fortune, you'll have mastered the fundamentals even if you attempt and fail a few times.
+                    At the studio, all of the clay from unsuccessful attempts or those created purely for practice is recycled and put to new use.
+                    </span>
+                </p>
+                <button class="read-more-btn" id="read-more-btn">Read More</button>
+            </div>
+        </div>
+    </section>
+    <!-- Gift Certificates Section -->
+    <section id="gift-certificates-section" class="gift-certificates-section">
+        <h1>Gift Certificates</h1>
+        <p>
+            With our single class or multi-pack gift certificates, you can give the lovely gift of pottery skills. These last for a full year. The date of the recipient's particular class event will be up to them to decide.
+        </p>
+        <div class="gift-certificates-container">
+            <div class="gift-image">
+                <img src="images/gift-card.jpg" alt="Gift Certificate">
+            </div>
+            <div class="gift-details">
+                <h2 id="gift-name">Single Class Gift: $69</h2>
+                <p id="gift-description">Redeemable for a hands-on pottery class, includes materials, valid for 12 months, perfect creative gift.</p>
+                <button id="next-gift-btn" class="next-gift-btn">Go to next gift</button>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact-section" class="contact-section">
+        <h1 class="section-heading">Contact Us</h1>
+        <div class="location-section">
+            <div class="image-container">
+                <h2 class="image-heading">Pottery Class in Surry Hills</h2>
+                <img src="images/pottery-class.jpg" alt="Pottery Class">
+                <button class="info-btn">More Info</button>
+            </div>
+            <div class="form-container">
+                <h2>JOIN THE POTTERY COMMUNITY</h2>
+                <p>Be the first to see our new products and receive special offers.</p>
+                <form action="#">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Message"></textarea>
+                    <button type="submit">SEND</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- JavaScript -->
+    <script>
+        const burgerMenu = document.getElementById("burger-menu");
+        const navLinks = document.getElementById("nav-links");
+
+        burgerMenu.addEventListener("click", () => {
+            navLinks.classList.toggle("show");
+            burgerMenu.classList.toggle("active");
+        });
+    </script>
+    <script src="script.js" defer></script>
+</body>
+</html>
